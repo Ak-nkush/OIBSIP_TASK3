@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="app1">
+        <form id="form">
+            <h1>To-Do Web App</h1>
+
+            <h4>Task title</h4>
+            <input id="input1" type="text">
+            <div id="msg"></div>
+            <h4>Due Date</h4>
+            <input id="input2" type="date">
+            <h4>Description</h4>
+            <textarea name="" id="input3" cols="30" rows="10"></textarea>
+
+            
+            
+            <button id="addnew" type="submit">
+                    <span>Enter Your Task</span>
+                    <i class="fa-solid fa-plus"></i>
+            </button>
+         
+        </form>
+    </div>
+
+
+    <div class="app2">
+
+        <h3>Task List</h3>
+        <div id="taskslist">
+            <div>
+                <span id="heading" class="stike">Task 1</span>
+                <span id="date" class="stike">2023-02-05</span>
+                <p class="stike">Going to the gym </p>
+
+                <span class="options">
+                    <i  onClick="taskdone(this)" class="fa-solid fa-check"></i>
+                    <i onClick="updatetask(this)"class="fa-solid fa-pen-to-square"></i>
+                    <i onClick="deletetask(this)" class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+            <div>
+                <span id="heading">Task 2</span>
+                <span id="date">2023-01-12</span>
+                <p>Early to bed</p>
+
+                <span class="options">
+                    <i  onClick="taskdone(this)" class="fa-solid fa-check"></i>
+                    <i onClick="updatetask(this)"class="fa-solid fa-pen-to-square"></i>
+                    <i onClick="deletetask(this)" class="fa-solid fa-trash"></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="app3">
+        <h3>Task Completed</h3>
+        <div id="taskscomp">
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
